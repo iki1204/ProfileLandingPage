@@ -1,50 +1,93 @@
-export const navLinks = [
-  { id: 'about', label: 'About' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'services', label: 'Services' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'contact', label: 'Contact' },
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaGitAlt,
+  FaDocker,
+  FaCloud,
+  FaCodeBranch,
+} from 'react-icons/fa'
+import {
+  SiJavascript,
+  SiTypescript,
+  SiTailwindcss,
+  SiExpress,
+  SiPostgresql,
+  SiMongodb,
+  SiFramer,
+  SiVite,
+} from 'react-icons/si'
+import { MdOutlineDevices, MdOutlineDesignServices } from 'react-icons/md'
+
+export const enlacesNav = [
+  { id: 'sobre-mi', label: 'Sobre mí' },
+  { id: 'habilidades', label: 'Habilidades' },
+  { id: 'servicios', label: 'Servicios' },
+  { id: 'proyectos', label: 'Proyectos' },
+  { id: 'contacto', label: 'Contacto' },
 ]
 
-export const skills = {
-  Frontend: ['React', 'JavaScript / TypeScript', 'HTML5', 'CSS3', 'Tailwind', 'Responsive Design', 'UI/UX'],
-  Backend: ['Node.js', 'REST APIs', 'Databases'],
-  Other: ['Git', 'Docker', 'Cloud', 'System Architecture'],
+export const habilidades = {
+  Frontend: [
+    { nombre: 'React', icono: FaReact },
+    { nombre: 'JavaScript', icono: SiJavascript },
+    { nombre: 'TypeScript', icono: SiTypescript },
+    { nombre: 'HTML5', icono: FaHtml5 },
+    { nombre: 'CSS3', icono: FaCss3Alt },
+    { nombre: 'Tailwind CSS', icono: SiTailwindcss },
+    { nombre: 'Diseño Responsivo', icono: MdOutlineDevices },
+    { nombre: 'UI/UX', icono: MdOutlineDesignServices },
+  ],
+  Backend: [
+    { nombre: 'Node.js', icono: FaNodeJs },
+    { nombre: 'Express', icono: SiExpress },
+    { nombre: 'REST APIs', icono: FaCodeBranch },
+    { nombre: 'PostgreSQL', icono: SiPostgresql },
+    { nombre: 'MongoDB', icono: SiMongodb },
+  ],
+  Otras: [
+    { nombre: 'Git', icono: FaGitAlt },
+    { nombre: 'Docker', icono: FaDocker },
+    { nombre: 'Cloud', icono: FaCloud },
+    { nombre: 'Framer Motion', icono: SiFramer },
+    { nombre: 'Vite', icono: SiVite },
+  ],
 }
 
-export const services = [
+export const servicios = [
   {
-    title: 'Full Stack Web Development',
-    description: 'Custom scalable web applications built for business growth and excellent user experience.',
+    titulo: 'Desarrollo Web Full Stack',
+    descripcion: 'Aplicaciones web escalables a medida, construidas para crecer con tu negocio.',
   },
   {
-    title: 'Frontend Development',
-    description: 'Modern, immersive interfaces engineered with React and contemporary UI architecture.',
+    titulo: 'Desarrollo Frontend',
+    descripcion: 'Interfaces modernas y fluidas con React y arquitectura de componentes robusta.',
   },
   {
-    title: 'Backend & API Development',
-    description: 'Robust APIs, secure integrations, and resilient data systems designed for scale.',
+    titulo: 'Backend y APIs',
+    descripcion: 'APIs seguras, integraciones confiables y sistemas de datos listos para escalar.',
   },
   {
-    title: 'Website Optimization',
-    description: 'Performance tuning, SEO improvements, and architecture upgrades for long-term velocity.',
+    titulo: 'Optimización de Sitios',
+    descripcion: 'Mejoras de rendimiento, SEO técnico y escalabilidad para resultados sostenibles.',
   },
 ]
 
-export const projects = [
+export const proyectos = [
   {
-    title: 'SaaS Analytics Dashboard',
-    description: 'A real-time product analytics platform with role-based access and actionable insights.',
+    titulo: 'Panel Analítico SaaS',
+    descripcion: 'Plataforma de analítica en tiempo real con control de roles y reportes accionables.',
     stack: ['React', 'Node.js', 'PostgreSQL'],
   },
   {
-    title: 'E-Commerce Performance Suite',
-    description: 'A conversion-focused storefront with headless CMS integrations and blazing-fast pages.',
+    titulo: 'Suite E-commerce de Alto Rendimiento',
+    descripcion: 'Tienda enfocada en conversión, con CMS headless e integración de APIs externas.',
     stack: ['React', 'Tailwind', 'REST API'],
   },
   {
-    title: 'Collaboration Workflow App',
-    description: 'A collaborative workspace for teams to manage tasks, docs, and live updates in one place.',
+    titulo: 'Workspace de Colaboración',
+    descripcion: 'Aplicación para equipos con tareas, documentación y sincronización en vivo.',
     stack: ['TypeScript', 'Docker', 'Cloud'],
   },
 ]
